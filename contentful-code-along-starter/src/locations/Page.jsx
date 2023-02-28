@@ -16,7 +16,7 @@ import cloneDeep from 'lodash.clonedeep';
 const useAllEntries = contentType => {
   const cma = useCMA();
 
-  // TODO: TO BE IMPLEMENTED
+  // TODO: Add API call to fetch entries for given contentType
 
   return [];
 };
@@ -36,14 +36,15 @@ const Page = () => {
   const handleTagSelect = e => {
     const tagEntryId = e.target.value;
 
-    // TODO: TO BE IMPLEMENTED
+    // TODO: Set selected tag by finding it in the tags array
   };
 
   // ===== STEP 2: Variant selection =====
   const [phoneVariants, refetchPhoneVariants] = useAllEntries('phoneVariant');
   const [partialVariantName, setPartialVariantName] = useState('');
 
-  const matchingPhoneVariants = undefined; // TODO: TO BE IMPLEMENTED
+  // TODO: Filter for variants that (1) don't already have tag or (2) don't match partial text search
+  const matchingPhoneVariants = [];
 
   // ===== STEP 3: Contentful updates =====
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -52,9 +53,9 @@ const Page = () => {
     setIsSubmitting(true);
 
     try {
-      // TODO: TO BE IMPLEMENTED
+      // TODO: (1) Link tag to each phone variant and (2) send update to Contentful
     } catch {
-      // TODO: TO BE IMPLEMENTED
+      // TODO: (2) Display error message in case of failure
     } finally {
       // Reset all state
       setIsSubmitting(false);
