@@ -1,0 +1,11 @@
+{
+  "name": "contentful-code-along",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://danfitz: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@github.com/danfitz/contentful-code-along.git",
+  "author": "Dan Fitz <dan@danfitz.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  }
+}
